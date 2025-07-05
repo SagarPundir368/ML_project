@@ -114,7 +114,7 @@ class ModelTrainer:
             prediction = best_model.predict(X_test)
 
             r2_square = r2_score(y_test,prediction)
-            return r2_square, model_report
+            return r2_square
 
         except Exception as e:
             raise CustomException(e,sys)
